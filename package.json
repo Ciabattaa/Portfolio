@@ -1,0 +1,15 @@
+{
+  "name": "exa-portfolio",
+  "version": "1.0.0",
+  "description": "portfolio-sida där ägaren kan logga in och lägga till olika saker som bilder, information, länkar, tidigare projekt, och mer..",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
