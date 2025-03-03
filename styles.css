@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+body {
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+h2, h3, h4, h5 {
+  margin-bottom: 8px;
+}
+
+div.primary, section.primary, button.primary, article.primary {
+  background-color: #fa5252;
+}
+div.secondary, section.secondary, button.secondary, article.secondary {
+  background-color: #e64980;
+}
+div.alternative, section.alternative, button.alternative, article.alternative {
+  background-color: #22b8cf;
+}
+div.black, section.black, button.black, article.black {
+  background-color: #212529;
+}
+div.darkgrey, section.darkgrey, button.darkgrey, article.darkgrey {
+  background-color: #868e96;
+}
+div.lightgrey, section.lightgrey, button.lightgrey, article.lightgrey {
+  background-color: #ced4da;
+}
+div.white, section.white, button.white, article.white {
+  background-color: #f8f9fa;
+}
+
+h1.primary, h2.primary, h3.primary, h4.primary, h5.primary, p.primary, span.primary, a.primary, small.primary {
+  color: #fa5252;
+}
+h1.secondary, h2.secondary, h3.secondary, h4.secondary, h5.secondary, p.secondary, span.secondary, a.secondary, small.secondary {
+  color: #e64980;
+}
+h1.alternative, h2.alternative, h3.alternative, h4.alternative, h5.alternative, p.alternative, span.alternative, a.alternative, small.alternative {
+  color: #22b8cf;
+}
+h1.black, h2.black, h3.black, h4.black, h5.black, p.black, span.black, a.black, small.black {
+  color: #212529;
+}
+h1.darkgrey, h2.darkgrey, h3.darkgrey, h4.darkgrey, h5.darkgrey, p.darkgrey, span.darkgrey, a.darkgrey, small.darkgrey {
+  color: #868e96;
+}
+h1.lightgrey, h2.lightgrey, h3.lightgrey, h4.lightgrey, h5.lightgrey, p.lightgrey, span.lightgrey, a.lightgrey, small.lightgrey {
+  color: #ced4da;
+}
+h1.white, h2.white, h3.white, h4.white, h5.white, p.white, span.white, a.white, small.white {
+  color: #f8f9fa;
+}
+
+.flex {
+  display: flex;
+}
+.flex.col {
+  flex-direction: column;
+}
+.flex.row {
+  flex-direction: row;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+h1, h2, h3, h4, h5, p, small {
+  margin-bottom: 16px;
+}
+
+body {
+  color: #f8f9fa;
+  padding-left: 80px;
+  padding-top: 16px;
+}
+body h1 span {
+  font-size: 14px;
+}
+body section h2 {
+  margin-right: 40px;
+}
+body section .ruta {
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 8px 16px 8px 0;
+}
+body section span {
+  font-size: 12px;
+  color: #ced4da;
+  margin-right: 40px;
+  width: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+}/*# sourceMappingURL=styles.css.map */

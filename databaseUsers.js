@@ -30,6 +30,6 @@ const addUser = async function addUser(name, email, password, personnr, telefon,
 }
 
 module.exports = {
-    supersecretkey: getUser,
+   portfolio: getUser,
    addUser: addUser,
 }
