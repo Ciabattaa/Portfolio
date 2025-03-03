@@ -1,0 +1,26 @@
+$font: "Arial", sans-serif !default;
+$font-size: 14px !default;
+$header-size: 40px, 30px, 20px, 18px, 15px !default;
+
+body {
+    font-family: $font;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: $font-size;
+}
+
+@each $size in $header-size {
+    $i: index($header-size, $size);
+    h#{$i} {
+        font-size: $size;
+    }
+}
+
+h1 {
+    margin-bottom: $base * 2;
+}
+
+h2,h3,h4,h5 {
+    margin-bottom: $base;
+}

@@ -1,0 +1,30 @@
+
+body {
+    padding-left: $base*10;
+    padding-top: $base*2;
+    h1 span {
+        font-size: 14px;
+    }
+    section {
+        h2 {
+            margin-right: $base*5;
+        }
+        .ruta {
+            display: block;
+            width: 75px;
+            height: 75px;
+            margin: $base $base*2 $base 0;
+        }
+        span {
+            font-size: 12px;
+            color: $lightgrey;
+            margin-right: $base*5;
+            width: 40px;
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        
+    }
+    
+}

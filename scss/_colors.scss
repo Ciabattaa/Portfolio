@@ -1,0 +1,31 @@
+$background: $white !default;
+$text-color: $black!default;
+$black: #000 !default;
+$darkgrey: #666 !default;
+$lightgrey: #aaa !default;
+$white: #fff !default;
+
+$colors: ("primary", $primary), 
+        ("secondary", $secondary), 
+        ("alternative", $alternative), 
+        ("black", $black), 
+        ("darkgrey", $darkgrey), 
+        ("lightgrey", $lightgrey), 
+        ("white", $white);
+
+div, section, button, article {
+  @each $color in $colors {
+      &.#{nth($color,1)} {
+        background-color: nth($color,2);
+      }
+    }
+}
+
+h1, h2, h3, h4, h5, p, span, a, small {
+  @each $color in $colors {
+      &.#{nth($color,1)} {
+        color: nth($color,2);
+      }
+    }
+}
+

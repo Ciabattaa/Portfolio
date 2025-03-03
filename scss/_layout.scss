@@ -1,0 +1,17 @@
+.flex {
+    display: flex;
+    &.col {
+        flex-direction: column;
+    }
+    &.row {
+        flex-direction: row;
+    }
+}
+
+section {
+    margin-bottom: $base*10;
+}
+
+h1,h2,h3,h4,h5,p,small {
+    margin-bottom: $base*2;
+}
