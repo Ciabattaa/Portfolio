@@ -17,8 +17,6 @@ const conn = mysql.createPool({
     port: process.env.DB_PORT,
 })
 
-
-
 app.set("view engine", "ejs")
 app.use("/public", express.static("public"));
 
